@@ -31,16 +31,23 @@ section{
 
 a{
     margin-right: 20px;
-    color: rgb(153, 85, 218);
+    color: #9955da;
     font-weight: bold;
     text-decoration: none;
 }
 
 .fundo{
-    height: var(--fundoSize);
-    background-image: url("./assets/dogwallpaper.gif");
-    background-size: cover;
+    position: absolute;
+    width: 100%;
+    min-width: 700px;
+    top: -3vw;
     background-color: orange;
+}
+
+.space-video{
+    position: relative;
+    height: var(--fundoSize);
+    overflow: hidden;
 }
 
 @media (max-width: 400px) {

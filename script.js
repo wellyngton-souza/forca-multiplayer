@@ -1,16 +1,16 @@
-const themeToggle = document.getElementById('theme-toggle');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+const BuscarHora = () =>{
+  var data = new Date();
+  var hora = data.getHours();
 
-function toggleTheme() {
-  if (document.body.classList.contains('dark-theme')) {
-    document.body.classList.remove('dark-theme');
+  if (hora >= 6 && hora < 12) {
+      return "Good Morning";
+  } else if (hora >= 12 && hora < 18) {
+      return "Good Afternoon";
   } else {
-    document.body.classList.add('dark-theme');
+      return "Good Evening";
   }
 }
 
-themeToggle.addEventListener('click', toggleTheme);
-
-if (prefersDarkScheme.matches) {
-  document.body.classList.add('dark-theme');
-}
+document.addEventListener("DOMContentLoaded", ()=>{
+  document.querySelector("h2").innerText = BuscarHora() + " Wellyngton";
+});

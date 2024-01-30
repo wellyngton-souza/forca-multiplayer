@@ -1,0 +1,13 @@
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.charinput{
+    width: 20px;
+    border: none;
+    padding: 0 10px;
+    font-size: 20px;
+    outline: none;
+}

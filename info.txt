@@ -1,0 +1,7 @@
+npm init -y
+npm i --save express socket.io
+npm i --save-dev nodemon
+npm i --save-dev typescript
+npm i socket.io-client
+
+erro de cors
